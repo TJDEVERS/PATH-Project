@@ -1,6 +1,8 @@
 /* import google font */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+
 /* global style */
 :root {
 
@@ -32,7 +34,7 @@
 
 --Red_1: #FE8A71; 
 
---Red_2: #c60032 ;
+--Red_2: #c60032;
 }
 
 
@@ -49,18 +51,17 @@ body{
 }
 
 h1{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 25px;
   letter-spacing: 2px;
 }
 
 h2{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 25px;
   letter-spacing: 2px;
-  padding: 20px;
 }
 
 h3{
@@ -71,15 +72,12 @@ h3{
 }
 
 
-
 h1.amatic {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
   font-size: 40px;
   letter-spacing: 5px;
 }
-
-
 
 
 p{
@@ -113,7 +111,6 @@ a:visited {
 a:hover {
   cursor: pointer;
   /* color: var(--Purple_1) !important; */
-  
 }
 
 
@@ -159,8 +156,7 @@ a:hover {
   color: var(--Purple_1) !important;
   }
 
-.list-group li:hover
-{
+.list-group li:hover{
 opacity: 80%;
 color: var(--Dark_Gray) !important;
 }
@@ -204,7 +200,6 @@ color: var(--Dark_Gray) !important;
   overflow: hidden;
   width: 100%;
   height: 300px;
-
 }
 
 div.crop img {
@@ -259,7 +254,6 @@ div.crop-square img {
 .navbar{
   background: var(--White);
   width: 100%;
-
 }
 
 .navbar a{
@@ -388,15 +382,14 @@ div.crop-square img {
   left:0;
   bottom:0;
   right:0;
-  opacity: 0.5;
+  opacity: 1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: inset -2px 31px 162px 47px rgba(143,143,143,0.27);
+  /* -webkit-box-shadow: inset -2px 31px 162px 47px rgba(143,143,143,0.27);
   -moz-box-shadow: inset -2px 31px 162px 47px rgba(86, 86, 86, 0.27);
-  box-shadow: inset -2px 31px 162px 47px rgba(102, 105, 104, 0.904);
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  box-shadow: inset -2px 31px 162px 47px rgba(102, 105, 104, 0.904); */
+ /* -webkit-filter: blur(3px); */
 }
 
 
@@ -411,7 +404,7 @@ div.crop-square img {
 /* Title Underline style */
 
 .title-underline {
-  background:var(--Dark_Gray);
+  background:var(--White);
   position: relative;
   margin-top: 40px;
   height: 0.4rem;
@@ -555,7 +548,6 @@ hr {
   display: inline-block;
   position: relative;
   transition: 0.5s;
-  
 }
 
 .button_lg span:after {
@@ -587,7 +579,6 @@ hr {
 .card{
   border: hidden;
   min-width: 300px;
-
 }
 
 
@@ -602,7 +593,6 @@ hr {
 
 .card-text{
   position: relative;
-
 }
 
 
@@ -656,9 +646,18 @@ position: absolute;
   background: var(--Purple_2);
 }
 
+/* Groups */
+.groups{
+  background: var(--Purple_1);
+}
+
+/* Cources */
+.courses{
+  background: var(--Purple_2);
+}
+
 
 /* facts stlying */
-
 .newspaper1 {
   columns: 100px 3;
 }
@@ -675,10 +674,9 @@ position: absolute;
 }
 
 
-/* Groups */
-.groups{
-  background: var(--Purple_1);
-}
+
+
+
 
 
 /* Welcome to your Family Hub */
@@ -686,15 +684,12 @@ position: absolute;
   background: var(--Purple_1);
 }
 
-
-
 /* Welcome Dads */
 .welcome-dads{
   background: var(--Teal_2);
 }
 
-
-/* Welcome munms */
+/* Welcome mums */
 .welcome-mums{
   background: var(--Teal_1);
 }
@@ -703,11 +698,51 @@ position: absolute;
 
 
 
+
+/* Welcome to employers section */
+.welcome-employers{
+  background: var(--Purple_1);
+}
+
+/* Information for Employers section */
+.information-employers{
+  background: var(--Teal_2);
+}
+
+/* Resources for Employers section */
+.resources-employers{
+  background: var(--Teal_1);
+}
+
+
+
+
+
+
+/* Welcome to Professionals section */
+.professionals{
+  background: var(--Purple_1);
+}
+
+
+/* Healthcare-Professionals section */
+.healthcare-professionals{
+  background: var(--Teal_2);
+}
+
+
+/* resources-professionals section */
+.resources-professionals{
+  background: var(--Teal_1);
+}
+
+
+
+
+
+
+
 /* Custom Backgrounds */
-
-
-
-
 .bg-custom-1{
   background:var(--Purple_1);
 
@@ -741,7 +776,6 @@ position: absolute;
   background:var(--Red_2);
 }
 
-
 .bg-custom-8{
   background:var(--Blue);
 }
@@ -752,14 +786,11 @@ position: absolute;
 
 .bg-custom-10{
   background:var(--Teal_1);
-
 }
 
 .bg-custom-11{
   background:var(--Teal_2);
-
 }
-
 
 .bg-custom-12{
   background:var(--Dark_Gray);
@@ -928,7 +959,6 @@ padding: 20px;
   background: var(--Purple_1);
 }
 
-
 .logo-footer {
 width: 80%;
 max-width: 550px;
@@ -938,8 +968,6 @@ a.footer-links{
   background:var(--Purple_5);
   color:  #F0F0F0;
 }
-
-
 
 a.footer-links:hover{
 opacity: 50%;
@@ -1016,10 +1044,10 @@ opacity: 50%;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
   .aside{ 
     flex: 1 0 0;
    }
- 
 }
 
 @media (max-width: 576px) {  
@@ -1029,8 +1057,6 @@ opacity: 50%;
   .newspaper1 {
     columns: 1;
   }
-
-
 }
 
 
@@ -1042,7 +1068,6 @@ opacity: 50%;
 .newspaper1 {
   columns: 1;
   }
-
 }
 
 
@@ -1055,15 +1080,19 @@ opacity: 50%;
  .main { 
    flex: 3 2px; 
   }
+
  .aside-1 { 
    order: 2; 
   }
+
  .main { 
    order: 1; 
   }
+
  .aside-2 { 
    order: 3; 
   }
+
  .aside-3 {
    order:4;
   }
@@ -1081,17 +1110,18 @@ opacity: 50%;
 
  .lg {color:Red_1;font-weight:bold;}
 
-
-
   .main { 
     flex: 3 2px; 
    }
+
   .aside-1 { 
     order: 2; 
    }
+
   .main { 
     order: 1; 
    }
+
   .aside-2 { 
     order: 3; 
    }
@@ -1115,15 +1145,19 @@ opacity: 50%;
     .main { 
       flex: 3 2px; 
      }
+
     .aside-1 { 
       order: 2; 
      }
+
     .main { 
       order: 1; 
      }
+
     .aside-2 { 
       order: 3; 
      }
+    
     .aside-3 {
       order:4;
      }
